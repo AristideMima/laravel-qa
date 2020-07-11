@@ -26,7 +26,7 @@ class Question extends Model
     //ulr accessor
     public function getUrlAttribute()
     {
-        return route('questions.show', $this->id);
+        return route('questions.show', $this->slug);
     }
 
     //createdDate accessor
@@ -42,12 +42,17 @@ class Question extends Model
         {
             if($this->best_answer_id)
             {
-                return "answerd-accepted";
+                return "answered-accepted";
             }
 
             return "answered";
         }
 
         return "unanswered";
+    }
+
+    public function getBodyHtmlAttribute()
+    {
+        return \Parsedown::instance()->text($this->body);
     }
 }
