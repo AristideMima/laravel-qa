@@ -50,6 +50,15 @@ class User extends Authenticatable
 
         return '#';
     }
+
+    //Avatar accessor
+    public function getAvatarAttribute()
+    {
+        $email = $this->email;
+        $size = 30;
+
+        return $grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?d=" . "&s=" . $size;
+    }
     //Answers relationship
     public function answers(){
         return $this->hasMany(Answer::class);

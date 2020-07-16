@@ -23,4 +23,10 @@ class Answer extends Model
     {
         return \Parsedown::instance()->text($this->body);
     }
+
+    //createdDate accessor
+    public function getCreatedDateAttribute()
+    {
+        return $this->created_at->diffForHumans();
+    }
 }
