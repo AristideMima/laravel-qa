@@ -14,7 +14,7 @@ class RenameAnswersInQuestionsTab extends Migration
     public function up()
     {
         Schema::table('questions', function (Blueprint $table) {
-            $table->removeColumn('answers', 'answers_count');
+            $table->renameColumn('answers', 'answers_count');
         });
     }
 
