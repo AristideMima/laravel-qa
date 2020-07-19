@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8cbb20bf-f467-47d2-86cb-4366089d6474" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AnswersConroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AnswersConroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Answer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AnswersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AnswersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/answers/_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/answers/_index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="AnswersController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnswersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="406">
+              <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -119,8 +117,8 @@
       <file leaf-file-name="Answer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Answer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="396">
+              <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -185,12 +183,12 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/answers/_create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/questions/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Answer.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/answers/_index.blade.php" />
         <option value="$PROJECT_DIR$/app/Policies/AnswerPolicy.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AnswersConroller.php" />
         <option value="$PROJECT_DIR$/resources/views/answers/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Answer.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AnswersController.php" />
       </list>
     </option>
@@ -459,12 +457,12 @@
       <workItem from="1594751184971" duration="4232000" />
       <workItem from="1594887338296" duration="3431000" />
       <workItem from="1594929928257" duration="2028000" />
-      <workItem from="1595003514283" duration="13595000" />
+      <workItem from="1595003514283" duration="14503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73397000" />
+    <option name="totallyTimeSpent" value="74305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -476,7 +474,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22493573" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.24421594" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13881747" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" />
@@ -792,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Answer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -867,10 +858,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Answer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnswersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="406">
+          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
