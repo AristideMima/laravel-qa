@@ -16,7 +16,7 @@
                                 <a href="" title ="This answer is not usable" class="vote-down off">
                                     <i class="fas fa-caret-down fa-2x"></i>
                                 </a>
-                                <a href="" title="Mark this answer as best answer" class="vote-accepted mt-2 favorited">
+                                <a href="" title="Mark this answer as best answer" class="{{ $answer->status }} mt-2 favorited">
                                     <i class="fas fa-check fa-2x"></i>
                                     <span class="favorites-count">2</span>
                                 </a>
