@@ -13,13 +13,28 @@
                                     <i class="fas fa-caret-up fa-2x"></i>
                                 </a>
                                 <span class="votes-count">12</span>
-                                <a href="" title ="This answer is not usable" class="vote-down off">
+                                <a href="" title ="This answer is not useful" class="vote-down off">
                                     <i class="fas fa-caret-down fa-2x"></i>
                                 </a>
-                                <a href="" title="Mark this answer as best answer" class="{{ $answer->status }} mt-2 favorited">
-                                    <i class="fas fa-check fa-2x"></i>
-                                    <span class="favorites-count">2</span>
-                                </a>
+                                @can('accept', $answer)
+                                    <a href="" title="Mark this answer as best answer"
+                                       class="{{ $answer->status }} mt-2 favorited"
+                                        onclick="event.preventDefault(); document.getElementById('accept-answer-{{ $answer->id }}').submit();">
+                                        <i class="fas fa-check fa-2x"></i>
+                                        <span class="favorites-count">2</span>
+                                    </a>
+                                    <form id="accept-answer-{{ $answer->id }}" action="{{ route('answers.accept', $answer->id) }}" method="post" style="display: none">
+                                        @csrf
+                                    </form>
+                                    @else
+                                        @if($answer->is_best)
+                                        <a href="" title="The question owner accepted this answer as best answer"
+                                           class="{{ $answer->status }} mt-2 favorited">
+                                            <i class="fas fa-check fa-2x"></i>
+                                            <span class="favorites-count">2</span>
+                                        </a>
+                                        @endif
+                                @endcan
                             </div>
                             <div class="media-body">
                                 {!!  $answer->body_html !!}
