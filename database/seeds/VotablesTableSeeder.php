@@ -14,7 +14,7 @@ class VotablesTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('votables')->where('votable_type', 'App\Question')->delete();
+        \DB::table('votables')->delete();
 
         $users = User::all();
         $numberOfUsers = $users->count();
@@ -27,6 +27,16 @@ class VotablesTableSeeder extends Seeder
                 $user = $users[$i];
 
                 $user->voteQuestion($question, $votes[rand(0,1)]);
+            }
+        }
+
+        foreach (\App\Answer::all() as $answer)
+        {
+            for($i=0; $i<rand(0, $numberOfUsers); $i++)
+            {
+                $user = $users[$i];
+
+                $user->voteAnswer($answer, $votes[rand(0,1)]);
             }
         }
     }
