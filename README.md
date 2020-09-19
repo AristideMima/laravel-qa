@@ -15,3 +15,7 @@
         <li>Edit or Delete his question or answer</li>
     </ul>
 </p>
+
+<footer>
+    <p><em> For any question or suggestion you can send me an email at: <a href="mailto:aristidemima@gmail.com">aristidemima@gmail.com</a></em></p>
+</footer>
