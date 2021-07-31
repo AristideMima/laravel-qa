@@ -1,6 +1,5 @@
-# Laravel Question Answer App 
+# Mini StackOverflow Clone
 
-<h1>Stackoverflow mini-copy</h1>
 
 <p> This repository is a Questions answers system, built with Laravel and Node Js <p/>
 
